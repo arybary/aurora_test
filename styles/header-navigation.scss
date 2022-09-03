@@ -1,0 +1,24 @@
+/** @format */
+
+.header-navigation {
+  display: none;
+
+  @include for-large-up {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+    &__item {
+      text-decoration: none;
+      padding-right: 16px;
+      padding-left: 16px;
+      font-weight: 600;
+      font-size: 13px;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.search {
+  display: none;
+
+  @include for-large-up {
+    display: flex;
+    align-items: center;
+    width: 41%;
+    height: 48px;
+    margin-top: 24px;    
+    border-radius: 0px;
+    background: #f7f7f724;
+    border-radius: 3px;
+    &__input {
+      border: none;
+      outline: none;
+      width: 94%;
+      cursor: pointer;    
+      padding-left: 16px;
+      background:transparent;
+
+      &::placeholder {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.8px;
+        color: #ffffff;
+      }
+   }
+  }
+}
+
+

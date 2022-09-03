@@ -1,0 +1,31 @@
+.bar {
+  display: none;
+  
+  @include for-large-up {
+    display: flex;
+    background-color: #ffffff;
+    color: black;
+    height: 24px;
+    justify-content: space-between;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-left: 45.35%;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+  }
+
+  &__store {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+    margin-right: 24px;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 0.0833333px;
+  }
+}

@@ -1,0 +1,22 @@
+.header:hover {
+  background: white;
+  color: #000;
+  &:hover .bar {
+    background: #f7f7f7;
+  }
+  &:hover .search {
+    background: #f7f7f7;
+    border: 1px solid #f2f2f2;
+  }
+  &:hover .header-navigation__item {
+    color: #000;
+  }
+  &:hover .search__input::placeholder {
+    color: #000;
+  } &:hover .button-icon  {
+    color: #000;
+  }
+  &:hover .register__img {
+    filter: invert(100%);
+  }
+}

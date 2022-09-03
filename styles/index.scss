@@ -1,0 +1,36 @@
+@import "./breakpoints.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: #000000;
+}
+
+.page {
+  width: 100%;
+  background: url(img/393865.png);  
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+
+  @include for-large-up {
+    display: flex;
+    flex-direction: column;
+    background: url(img/9193579.png);  
+    background-repeat: no-repeat;    
+    background-position: center 24px;
+  }
+}
+
+@import "./header.scss";
+@import "./bar.scss";
+@import "./btn-icon.scss";
+@import "./search.scss";
+@import "./register.scss";
+@import "./header-navigation.scss";
+@import "./body.scss";
+@import "./footer.scss";
+@import "./hover.scss";

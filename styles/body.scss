@@ -1,0 +1,94 @@
+.greetings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    display: none;
+
+    @include for-large-up {
+      display: block;
+      height: 517px;
+      padding-top: 180px;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 90px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}
+
+.search-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 408px;
+  height: 130px;
+  align-content: center;
+  background: #ffffff;
+
+  @include for-large-up {
+    margin: 0px;
+    height: 146px;
+  }
+
+  &__text {
+    height: 36px;
+    max-width: 326px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.872727px;
+    margin-bottom: 14px;
+
+    @include for-large-up {
+      max-width: 439px;
+    }
+  }
+  &__enter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 440px;
+
+    @include for-large-up {
+      width: 31%;
+    }
+
+    &__input {
+      height: 32px;
+      width: 68%;
+      padding-left: 11px;
+      border: 1px solid #e1e0e1;
+      border-radius: 3px;
+      margin-right: 12px;
+      &::placeholder {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.8px;
+        color: #4a4a4a;
+      }
+
+      @include for-large-up {
+        width: 76%;
+      }
+    }
+
+    &__btn {
+      height: 32px;
+      width: 95px;
+      border: none;
+      border-radius: 3px;
+      font-weight: 600;
+      font-size: 10px;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #000000;
+    }
+  }
+}

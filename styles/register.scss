@@ -1,0 +1,53 @@
+.register {
+    display: flex;
+    margin-top: 16px;
+    margin-right: 16px;
+    width: 46px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    cursor: pointer;
+  
+    @include for-large-up {
+      width: 148px;
+      margin-top: 0px;
+      margin-right: 24px;
+    }
+  
+    &__text {
+      display: none;
+  
+      @include for-large-up {
+        display: flex;
+        justify-content: space-between;
+        width: 117px;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 1px;
+      }
+    }
+  
+    &__img {
+      height: 24px;
+      width: 16px;
+    }
+    &__counter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 24px;
+      width: 24px;
+      background: #f2da91;
+      border-radius: 50%;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      color: black;
+  
+      @include for-large-up {
+        display: none;
+      }
+    }
+  }
+  
