@@ -27,6 +27,14 @@ html {
 /** @format */
 .menu {
   display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 91%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
 }
 
 .close {
@@ -36,14 +44,6 @@ html {
 
 .menu-show {
   display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 91%;
-  height: 100vh;
-  background-color: white;
-  z-index: 10;
 }
 @media screen and (min-width: 361px) {
   .menu-show {
@@ -78,6 +78,46 @@ html {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   border: 1px solid #f7f7f7;
+}
+
+.menu-footer {
+  background: #f7f7f7;
+  padding-left: 15px;
+}
+
+.menu-register {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  width: 108px;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+.menu-store {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.0833333px;
+}
+
+.menu-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.8px;
 }
 
 .header {
