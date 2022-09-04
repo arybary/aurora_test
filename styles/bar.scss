@@ -1,6 +1,6 @@
 .bar {
   display: none;
-  
+
   @include for-large-up {
     display: flex;
     background-color: #ffffff;

@@ -1,5 +1,3 @@
-/** @format */
-
 const menuBtn = document.querySelector(".fa-bars");
 
 const menuOpen = () => {
@@ -51,29 +49,32 @@ prevMenuBtn.forEach((item) => {
 
 const searchBtn = document.querySelector("#search");
 
-const openSearch = (event) => {
+const openSearch = () => {
   const icon = document.querySelector(".fa-magnifying-glass");
- icon.classList.toggle("fa-xmark");
-
-
+  icon.classList.toggle("fa-xmark");
   const searchInput = document.querySelector(".search");
-  console.log(icon);
   searchInput.classList.toggle("search-show");
 };
 
 searchBtn.addEventListener("click", openSearch);
 
-const enterBtn=document.querySelectorAll("#enter");
-const exitBtn=document.querySelectorAll("#exit");
+const enterBtn = document.querySelectorAll("#enter");
+const exitBtn = document.querySelectorAll("#exit");
 
-const clickEnter=()=>{
-  const basketCounter=document.querySelector(".register__counter");
-  const page=document.querySelector(".page");
-  exitBtn.forEach(item=>{const elem=item;elem.hidden=!item.hidden});
-  enterBtn.forEach(item=>{const elem=item;elem.hidden=!item.hidden});
+const clickEnter = () => {
+  const basketCounter = document.querySelector(".register__counter");
+  const page = document.querySelector(".page");
+  exitBtn.forEach((item) => {
+    const elem = item;
+    elem.hidden = !item.hidden;
+  });
+  enterBtn.forEach((item) => {
+    const elem = item;
+    elem.hidden = !item.hidden;
+  });
   basketCounter.classList.toggle("counter-show");
   page.classList.toggle("img-two");
-}
+};
 
 enterBtn.forEach((item) => {
   item.addEventListener("click", clickEnter);
@@ -84,7 +85,7 @@ exitBtn.forEach((item) => {
 
 const footerNavBtn = document.querySelectorAll(".navigation__title");
 
-const navItemClick = (event) => {
+const toggleShowNavList = (event) => {
   const lists = document.querySelectorAll(".navigation__list");
   const icons = document.querySelectorAll(".navigation__icon");
   const targetList = event.target.parentElement.nextElementSibling;
@@ -102,5 +103,5 @@ const navItemClick = (event) => {
 };
 
 footerNavBtn.forEach((item) => {
-  item.addEventListener("click", navItemClick);
+  item.addEventListener("click", toggleShowNavList);
 });

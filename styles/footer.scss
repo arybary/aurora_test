@@ -1,5 +1,3 @@
-/** @format */
-
 .footer {
   background: #f7f7f7;
   display: flex;
@@ -34,6 +32,7 @@
     margin-right: 42px;
     border: none;
   }
+
   &__title {
     font-family: "Cormorant Garamond";
     display: flex;
@@ -50,6 +49,7 @@
       margin-bottom: 17px;
     }
   }
+
   &__icon {
     font-size: 14px;
     margin-top: 3px;
@@ -59,6 +59,7 @@
       display: none;
     }
   }
+  
   &__list {
     display: none;
     list-style-type: none;
@@ -78,48 +79,6 @@
     &-item {
       margin-bottom: 6px;
     }
-  }
-}
-
-.social__title {
-  display: none;
-  @include for-large-up {
-    display: block;
-  }
-}
-
-.social-links {
-  display: flex;
-  margin: auto;
-  margin-top: 24.5px;
-  width: 185px;
-  justify-content: space-between;
-  @include for-large-up {
-    width: 139px;
-    margin-top: 12px;
-  }
-  &__icon {
-    font-size: 21px;
-    color: #000;
-    @include for-large-up {
-      font-size: 16px;
-    }
-  }
-}
-
-.end-text {
-  width: 224px;
-  font-weight: 400;
-  font-size: 9px;
-  line-height: 14px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  margin-top: 16px;
-  margin-bottom: 23px;
-
-  @include for-large-up {
-    margin-top: 34px;
-    margin-right: 22px;
   }
 }
 
