@@ -9,8 +9,7 @@ html {
 }
 
 .page {
-  width: 100%;
-  background: url(img/393865.png);
+  background: url(img/9193579.png) -457px 0/1057px 555px;
   background-repeat: no-repeat;
   overflow-y: hidden;
 }
@@ -19,7 +18,17 @@ html {
     display: flex;
     flex-direction: column;
     background: url(img/9193579.png);
-    background-repeat: no-repeat;
+    background-position: center 24px;
+  }
+}
+
+.img-two {
+  background: url(img/hp-oh-hi.png) -300px 0/1057px 555px;
+}
+@media screen and (min-width: 361px) {
+  .img-two {
+    background: url(img/hp-oh-hi.png);
+    background-size: 1440px 810px;
     background-position: center 24px;
   }
 }
@@ -279,6 +288,9 @@ html {
 }
 @media screen and (min-width: 361px) {
   .search {
+    position: relative;
+    top: 0;
+    right: 0;
     display: flex;
     width: 41%;
     height: 48px;
@@ -300,13 +312,12 @@ html {
   margin-right: 16px;
   width: 46px;
   align-items: center;
-  justify-content: space-between;
-  text-align: right;
   cursor: pointer;
 }
 @media screen and (min-width: 361px) {
   .register {
     width: 148px;
+    justify-content: space-between;
     margin-top: 0px;
     margin-right: 24px;
   }
@@ -327,9 +338,15 @@ html {
 .register__img {
   height: 24px;
   width: 16px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 361px) {
+  .register__img {
+    margin-right: 10px;
+  }
 }
 .register__counter {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 24px;
@@ -342,10 +359,9 @@ html {
   text-transform: uppercase;
   color: black;
 }
-@media screen and (min-width: 361px) {
-  .register__counter {
-    display: none;
-  }
+
+.counter-show {
+  display: flex;
 }
 
 /** @format */

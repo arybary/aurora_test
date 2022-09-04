@@ -63,6 +63,25 @@ const openSearch = (event) => {
 
 searchBtn.addEventListener("click", openSearch);
 
+const enterBtn=document.querySelectorAll("#enter");
+const exitBtn=document.querySelectorAll("#exit");
+
+const clickEnter=()=>{
+  const basketCounter=document.querySelector(".register__counter");
+  const page=document.querySelector(".page");
+  exitBtn.forEach(item=>{const elem=item;elem.hidden=!item.hidden});
+  enterBtn.forEach(item=>{const elem=item;elem.hidden=!item.hidden});
+  basketCounter.classList.toggle("counter-show");
+  page.classList.toggle("img-two");
+}
+
+enterBtn.forEach((item) => {
+  item.addEventListener("click", clickEnter);
+});
+exitBtn.forEach((item) => {
+  item.addEventListener("click", clickEnter);
+});
+
 const footerNavBtn = document.querySelectorAll(".navigation__title");
 
 const navItemClick = (event) => {

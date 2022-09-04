@@ -4,12 +4,11 @@
     margin-right: 16px;
     width: 46px;
     align-items: center;
-    justify-content: space-between;
-    text-align: right;
     cursor: pointer;
   
     @include for-large-up {
       width: 148px;
+      justify-content: space-between;
       margin-top: 0px;
       margin-right: 24px;
     }
@@ -30,9 +29,13 @@
     &__img {
       height: 24px;
       width: 16px;
+      margin-right: 10px;
+      @include for-large-up {
+       margin-right: 10px;
+      }
     }
     &__counter {
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: center;
       height: 24px;
@@ -43,11 +46,10 @@
       font-size: 11px;
       letter-spacing: 0.2px;
       text-transform: uppercase;
-      color: black;
-  
-      @include for-large-up {
-        display: none;
+      color: black;  
       }
-    }
   }
   
+  .counter-show {
+    display: flex;
+  }

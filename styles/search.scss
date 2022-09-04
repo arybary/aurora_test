@@ -28,6 +28,9 @@
   }
 
   @include for-large-up {
+    position: relative;
+    top:0;
+    right: 0;
     display: flex;
     width: 41%;
     height: 48px;
@@ -42,4 +45,5 @@
 
 .search-show {
   display: flex;
+
 }
