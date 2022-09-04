@@ -1,5 +1,3 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,7 +37,7 @@
             <button class="button-icon">
               <i class="fa-solid fa-bars"></i>
             </button>
-            <button class="button-icon">
+            <button id="search" class="button-icon">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
@@ -54,7 +52,7 @@
           </div>
           <div class="register">
             <div class="register__text">
-              <div>Sign in</div>
+              <div >Sign in</div>
               |
               <div>Register</div>
             </div>
@@ -115,8 +113,7 @@
           </div>
           <div class="navigation">
             <div class="navigation__title">
-              <span>Help</span
-              ><i class="fas fa-light fa-chevron-right navigation__icon"></i>
+              Help<i class="fas fa-light fa-chevron-right navigation__icon"></i>
             </div>
             <ul class="navigation__list">
               <li class="navigation__list-item">Customer service</li>
@@ -176,47 +173,95 @@
           © Copyright, Aurora 2020. All Rights reserved.
         </div>
       </footer>
-      <div class="menu">
-        <div class="menu-header">
-          <div class="close">x</div>
-          <div class="menu-header__title">Aurora</div>
+    </div>
+
+    <!--Mobile modal menu burger-->
+
+    <div class="menu">
+      <div class="menu-header">
+        <i class="fas fa-xmark menu-close"></i>
+        <div class="menu-header__title">Aurora</div>
+      </div>
+      <div id="menu" class="menu-navigation">
+        <div id="what’s new" class="menu-navigation__item">
+          what’s new<i class="fas fa-light fa-chevron-right"></i>
         </div>
-        <div class="menu-navigation">
-          <div class="menu-navigation__item">
-            what’s new<i class="fas fa-light fa-chevron-right"></i>
-          </div>
-          <div class="menu-navigation__item">
-            women<i class="fas fa-light fa-chevron-right"></i>
-          </div>
-          <div class="menu-navigation__item">
-            accessories<i class="fas fa-light fa-chevron-right"></i>
-          </div>
-          <div class="menu-navigation__item">
-            kids<i class="fas fa-light fa-chevron-right"></i>
-          </div>
-          <div class="menu-navigation__item">
-            beauty<i class="fas fa-light fa-chevron-right"></i>
-          </div>
-          <div class="menu-navigation__item">
-            outlet<i class="fas fa-light fa-chevron-right"></i>
-          </div>
-          <div class="menu-navigation__item">
-            stories<i class="fas fa-light fa-chevron-right"></i>
-          </div>
+        <div id="women" class="menu-navigation__item">
+          women<i class="fas fa-light fa-chevron-right"></i>
         </div>
-        <div>
-          <div class="menu-footer">
-          <div class="menu-register">
-            <div>Sign in </div>            |
-            <div>Register </div>
+        <div id="accessories" class="menu-navigation__item">
+          accessories<i class="fas fa-light fa-chevron-right"></i>
+        </div>
+        <div id="kids" class="menu-navigation__item">
+          kids<i class="fas fa-light fa-chevron-right"></i>
+        </div>
+        <div class="menu-navigation__item">
+          beauty<i class="fas fa-light fa-chevron-right"></i>
+        </div>
+        <div class="menu-navigation__item">
+          outlet<i class="fas fa-light fa-chevron-right"></i>
+        </div>
+        <div class="menu-navigation__item">
+          stories<i class="fas fa-light fa-chevron-right"></i>
+        </div>
+      </div>
+
+      <!--Next menu women-->
+
+      <div class="menu-navigation" id="next-women" hidden>
+        <div class="menu-next">
+          <div class="menu-next__title">
+            <i class="fas fa-light fa-chevron-left menu-next__icon"></i>women
           </div>
-          <div class="menu-store">
-            <i class="fa-solid fa-location-dot"></i>
-            Our stores
-          </div>         
+          <div class="menu-next__link">View all</div>
+        </div>
+        <div id="clothing" class="menu-navigation__item">
+          clothing<i class="fas fa-light fa-chevron-right"></i>
+        </div>
+        <div id="collections" class="menu-navigation__item">
+          collections<i class="fas fa-light fa-chevron-right"></i>
+        </div>
+        <div id="collabs" class="menu-navigation__item">
+          collabs<i class="fas fa-light fa-chevron-right"></i>
+        </div>
+        <div id="brands" class="menu-navigation__item">
+          brands<i class="fas fa-light fa-chevron-right"></i>
+        </div>
+      </div>
+
+      <!--Next menu clothing-->
+
+      <div class="menu-navigation" id="next-clothing" hidden>
+        <div class="menu-next">
+          <div class="menu-next__title">
+            <i class="fas fa-light fa-chevron-left menu-next__icon"></i>clothing
+          </div>
+          <div class="menu-next__link">View all</div>
+        </div>
+        <ul class="menu-last">
+          <li class="menu-last__item">T-shirts</li>
+          <li class="menu-last__item">Sweatshirts</li>
+          <li class="menu-last__item">Knitwear</li>
+          <li class="menu-last__item">Jeans</li>
+          <li class="menu-last__item">Jumpsuits</li>
+          <li class="menu-last__item">Skirts</li>
+          <li class="menu-last__item">Dresses</li>
+        </ul>
+      </div>
+
+      <!--footer modal menu borger-->
+
+      <div class="menu-footer">
+        <div class="menu-register">
+          <div>Sign in</div>
+          |
+          <div>Register</div>
+        </div>
+        <div class="menu-store">
+          <i class="fa-solid fa-location-dot"></i>
+          Our stores
         </div>
         <div class="menu-end">We deliver Worldwide</div>
-        </div>
       </div>
     </div>
 

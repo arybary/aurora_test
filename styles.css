@@ -37,7 +37,7 @@ html {
   z-index: 10;
 }
 
-.close {
+.menu-close {
   cursor: pointer;
   font-size: 20px;
 }
@@ -82,10 +82,13 @@ html {
 
 .menu-footer {
   background: #f7f7f7;
-  padding-left: 15px;
+  position: fixed;
+  width: 91%;
+  bottom: 0;
 }
 
 .menu-register {
+  margin-left: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,6 +102,7 @@ html {
 }
 
 .menu-store {
+  margin-left: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,10 +118,53 @@ html {
   align-items: center;
   justify-content: center;
   padding-top: 15px;
+  padding-bottom: 32px;
   width: 100%;
   font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.8px;
+  background: white;
+}
+
+.menu-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  border-bottom: 1px solid #000000;
+}
+.menu-next__title {
+  padding-left: 16px;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.menu-next__icon {
+  padding-right: 16px;
+}
+.menu-next__link {
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.0916667px;
+  text-decoration-line: underline;
+  padding-right: 16px;
+}
+
+.menu-last {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  padding: 0;
+  list-style-type: none;
+}
+.menu-last__item {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border-bottom: 1px solid #f7f7f7;
+  padding-left: 16px;
 }
 
 .header {
@@ -203,35 +250,48 @@ html {
   cursor: pointer;
 }
 
+/** @format */
 .search {
   display: none;
+  position: absolute;
+  top: 57px;
+  right: 16px;
+  align-items: center;
+  width: 91%;
+  height: 40px;
+  background: rgba(247, 247, 247, 0.1411764706);
+  border-radius: 3px;
+}
+.search__input {
+  border: none;
+  outline: none;
+  width: 94%;
+  cursor: pointer;
+  padding-left: 16px;
+  background: transparent;
+}
+.search__input::placeholder {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+  color: #ffffff;
 }
 @media screen and (min-width: 361px) {
   .search {
     display: flex;
-    align-items: center;
     width: 41%;
     height: 48px;
     margin-top: 24px;
-    border-radius: 0px;
-    background: rgba(247, 247, 247, 0.1411764706);
-    border-radius: 3px;
   }
   .search__input {
-    border: none;
-    outline: none;
     width: 94%;
-    cursor: pointer;
     padding-left: 16px;
-    background: transparent;
   }
-  .search__input::placeholder {
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 16px;
-    letter-spacing: 0.8px;
-    color: #ffffff;
-  }
+}
+
+.search-show {
+  display: flex;
 }
 
 .register {
