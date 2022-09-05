@@ -1,10 +1,8 @@
 
 
-<h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Layout Sample Project</h2>
+<h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Aurora test</h2>
 
 <a href="https://arybary.github.io/aurora_test/">Site link</a>
-
-<h4>Layout supports mobile (up-to-400) and desktop (up-to-1360) versions</h4>
 
 
 ### The tech stack is: ### 
