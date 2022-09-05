@@ -1,5 +1,3 @@
-/** @format */
-
 const menuBtn = document.querySelector(".fa-bars");
 
 const menuOpen = () => {
