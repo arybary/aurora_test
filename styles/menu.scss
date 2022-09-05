@@ -42,7 +42,7 @@
 
   &__item {
     display: flex;
-
+    cursor: pointer;
     justify-content: space-between;
     height: 48px;
     font-weight: 600;
@@ -114,6 +114,7 @@
   }
   &__icon {
     padding-right: 16px;
+    cursor: pointer;
   }
   &__link {
     font-weight: 400;
@@ -129,6 +130,7 @@
   line-height: 19px;
   letter-spacing: 0.1px;
   padding: 0; 
+  margin: 0;
   list-style-type: none;
 
   &__item {

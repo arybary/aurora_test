@@ -1,3 +1,5 @@
+/** @format */
+
 const menuBtn = document.querySelector(".fa-bars");
 
 const menuOpen = () => {
@@ -88,16 +90,21 @@ const footerNavBtn = document.querySelectorAll(".navigation__title");
 const toggleShowNavList = (event) => {
   const lists = document.querySelectorAll(".navigation__list");
   const icons = document.querySelectorAll(".navigation__icon");
-  const targetList = event.target.parentElement.nextElementSibling;
-  const targetIcon = event.target;
+  const targetList = event.target.nextElementSibling;
+  const targetIcon = event.target.firstElementChild;
+  console.log(targetIcon);
   lists.forEach((item) => {
     if (item === targetList) {
       item.classList.toggle("show");
+    } else {
+      item.classList.remove("show");
     }
   });
   icons.forEach((item) => {
     if (item === targetIcon) {
       item.classList.toggle("rotate");
+    } else {
+      item.classList.remove("rotate");
     }
   });
 };

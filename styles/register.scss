@@ -4,6 +4,7 @@
     margin-right: 16px;
     width: 46px;
     align-items: center;
+    justify-content: end;
     cursor: pointer;
   
     @include for-large-up {
@@ -29,24 +30,22 @@
     &__img {
       height: 24px;
       width: 16px;
-      margin-right: 10px;
-      @include for-large-up {
-       margin-right: 10px;
-      }
-    }
+   }
+
     &__counter {
       display: none;
       align-items: center;
       justify-content: center;
       height: 24px;
       width: 24px;
+      margin-left: 9px;
       background: #f2da91;
       border-radius: 50%;
       font-weight: 600;
       font-size: 11px;
       letter-spacing: 0.2px;
       text-transform: uppercase;
-      color: black;  
+      color: #000;  
       }
   }
   

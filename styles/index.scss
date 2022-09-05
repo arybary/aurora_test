@@ -18,18 +18,21 @@ html {
   @include for-large-up {
     display: flex;
     flex-direction: column;
-    background: url(img/9193579.png);
-    background-position: center 24px;
+    background: url(img/9193579.png) center 24px;
+    background-color: #F2CFB9;;
+    background-repeat: no-repeat; 
   }
 }
 
 .img-two {
   background: url(img/hp-oh-hi.png) -300px 0/1057px 555px;
+  background-repeat: no-repeat;
   
   @include for-large-up {
     background: url(img/hp-oh-hi.png);
     background-size: 1440px 810px;
     background-position: center 24px;
+    background-repeat: no-repeat; 
   }
 }
 

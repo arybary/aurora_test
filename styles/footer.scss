@@ -44,6 +44,7 @@
     padding-top: 12.5px;
     padding-left: 16px;
     padding-bottom: 12.5px;
+    cursor: pointer;
     @include for-large-up {
       padding: 0;
       margin-bottom: 17px;
@@ -53,7 +54,6 @@
   &__icon {
     font-size: 14px;
     margin-top: 3px;
-    cursor: pointer;
 
     @include for-large-up {
       display: none;
