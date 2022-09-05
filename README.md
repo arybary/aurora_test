@@ -22,7 +22,7 @@ When you hover over the header, the color changes.
 When you click on Sign in, imitation of the Angels entrance, the page background changes
 
 mobile version:
-press the burger menu icon > woman field > closing field
+press the burger menu icon > woman field > clothing field
 
 the icon for closing the menu and returning to the menu works, as well as the search icon
 
